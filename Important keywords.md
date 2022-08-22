@@ -24,3 +24,13 @@
     - Accounting: is reviewing log files to check for compliance and violations in order to hold subjects accountable for their actions
 5. Defense in Depth: layering, is the use of multiple controls in a series
 6. Encryption: is the science of hiding the meaning or intent of a communication from unintended recipients
+
+## Security Governance
+
+1. Security Governance: is the collection of practices related to supporting, evaluating, defining and directing the security efforts of an organisation. Optimally, security governance is performed by a board of directors
+
+[*] the best security plan is useless without one key factor: approval by senior management.
+
+## Organisational Roles and Responsibility
+
+1. Senior Manager: role is assigned to the person who is ultimately responsible for the security maintained by an organisation and who should be most concerned about the protection of its assets.
