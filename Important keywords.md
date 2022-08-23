@@ -34,3 +34,5 @@
 ## Organisational Roles and Responsibility
 
 1. Senior Manager: role is assigned to the person who is ultimately responsible for the security maintained by an organisation and who should be most concerned about the protection of its assets.
+2. Security Leader: serves as the subject matter expert on issues of CIA
+3. Business Leader: Understands the mission, goals, objectives of the broader organisation
