@@ -2,7 +2,20 @@
 
 ## Security Concepts
 
-1. CIA Triad
+1. Ethics
+    - (ISC)2 Code of Professional Ethics
+      1. Protect society, the common good, neccessary public trust and confidence and the infrastructure
+      2. Act honorably, honestly, justly, responsibly and legally
+      3. Provide diligent and competent service to principle
+      4. Advance and protect the professional
+    - Organisational Code of Ethics
+    - RFC 1087 - Ethics and the Internet - outline what should not do
+      1. seeks to gain unauthorized access to resources of the internet
+      2. disrupts the intended use of the internet
+      3. wastes resources (people, capacity, computer) through such actions
+      4. destroys the integrity of computer-based information
+      5. comprimises the privacy of users
+2. CIA Triad
     - Confidentiality: measure used to ensure the protection of the secrecy of data, objects or resources. The goal is to preveint or minimise unauthorized access to data.
       - Sensitivity: quality of informatio, which could hard or damage if disclosed.
       - Discretion: is an act of decision where an operator can influence or control disclosure in order to minimise hard or damage
@@ -14,16 +27,16 @@
       - isolation: is the act of keeping something separate from others.
     - Integrity: is the concept of protecting the reliability and correctness of data.
     - Availability: means authorised subjects are granted timely and uninterrupted access to objects.
-2. Authenticity: security concept that data is authentic and originates from its alleged source.
-3. Nonrepudiation: ensure that subject of an activity or who caused an event cannot deny that the event occurred.
-4. AAA: Authentication, authorisation, accounting
+3. Authenticity: security concept that data is authentic and originates from its alleged source.
+4. Nonrepudiation: ensure that subject of an activity or who caused an event cannot deny that the event occurred.
+5. AAA: Authentication, authorisation, accounting
     - Identification: is claiming to be an identity when attempting to access a secured area or system.
     - Authentication: is proving that you are that claimed identity.
     - Authorisation: is defining the permission of a resource and object access for a speciric identity or subject.
     - Auditing: is recoding a log of the events and activities related to the system and subjects.
     - Accounting: is reviewing log files to check for compliance and violations in order to hold subjects accountable for their actions
-5. Defense in Depth: layering, is the use of multiple controls in a series
-6. Encryption: is the science of hiding the meaning or intent of a communication from unintended recipients
+6. Defense in Depth: layering, is the use of multiple controls in a series
+7. Encryption: is the science of hiding the meaning or intent of a communication from unintended recipients
 
 ## Security Governance
 
@@ -44,8 +57,8 @@
 
 ## Due Deligence and Due Care
 
-Due care: security professional must fulfilling legal responsibilities and professional best practices - doing right action at the right time
-Due diligence: security professional must take reasonable measures to investigate security risk - knowing what should be done and planning for it
+- Due diligence: security professional must take reasonable measures to investigate security risk - knowing what should be done and planning for it. due diligence is establishing a plan, policy and process to protect the interest of an organisation
+- Due care: security professional must fulfilling legal responsibilities and professional best practices - doing right action at the right time. Due care is practicing the individual activities that maintain the due diligence
 
 ## Security Control Frameworks
 
@@ -54,8 +67,8 @@ Due diligence: security professional must take reasonable measures to investigat
 3. ISO 27002 - cybersecurity control implementation
 4. ISO 27701 - privacy controls
 5. ISO 31000 - risk management programs
-6. NIST 800-53 - mandatory for federal agencies
-7. NIST Cybersecurity Framework
+6. NIST 800-53 - Security and Privacy Controls for Information Systems and Organisations - mandatory for federal agencies
+7. NIST Cybersecurity Framework - identify protect detect response and recovery
 
 PII - Personally Identifiable Information - any information that can be traced back to an individual
 PHI - Protected Health Information - Individually identifiable health records governed under HIPAA
@@ -82,12 +95,122 @@ PHI - Protected Health Information - Individually identifiable health records go
 
 ## Security Policy, Standards, Procedures and Guidelines
 
-1. Security policy - top tier, document that defines the scope of security needed by the organisation and discusses the assets that require protection. Overview or generalisation of an organisation's security needs
+1. Security policy - top tier, document that defines the scope of security needed by the organisation and discusses the assets that require protection. Overview or generalisation of an organisation's security needs - mandatory
 
      - acceptable use policy - aup - define level of acceptable performance and expectation of behaviour and activity
 
-2. Security standards - define compulsory requirements for the homogenous use of hardware, software, technology and security controls
-    - Security beseline - define minimum level of security that every system throughout the organisation must meet
-    - Guideline - offer recommendations on how standards and baselines are implemented
+2. Security standards - define compulsory requirements for the homogenous use of hardware, software, technology and security controls - mandatory
+3. Security beseline - define minimum level of security that every system throughout the organisation must meet
+    - CIS - contain baseline for software and system
+4. Guideline - offer recommendations on how standards and baselines are implemented - optional
+5. Security Procedures - is a detailed, step-by-step how-to document that describes the exact actions necessary to implement a specific security mechanism, control or solution. - mandatory or optional
 
-3. Security Procedures - is a detailed, step-by-step how-to document that describes the exact actions necessary to implement a specific security mechanism, control or solution.
+## Business Impact Analyst - Identifies and prioritises risks
+
+1. Annualised Loss Expectancy
+2. Single Loss Expectancy
+
+## Threat Modeling - is the security process where potential threats are identified, categorised and analysed.
+
+1. proactive - perform proactive during design and development
+2. reactive - perform once a product has been deployed - also called threat hunting
+
+STRIDE - microsoft threat categorisation scheme
+
+1. Spoofing - gaining access to a target through the use of falsified identity
+2. Tampering - any action resulting in unauthorised changes or manipulation of data
+3. Repudiation - ability of a user or attacker to deny having performed action
+4. Information disclosure - revelation or distribution of private, confidential information to external
+5. Denial of service - an attack that attempts to prevent authorised use of a resource
+6. Elevation of privilege - an attack where a limited user account is transformed into account with greater privileges
+
+PASTA - Process for Attack Simulation and Threat Analysis - seven-stage threat modeling methodology - risk-centric approach that aims at selecting or developing countermeasure in relation to the value of the assets to be protected
+
+1. Stage I definition of objective for the analysis of risks
+2. Stage II definition of the technocal scope
+3. Stage III Application decomposition and analysis
+4. Stage IV Threat analysis
+5. Stage V Weakness and vulnerability analysis
+6. Stage VI Attack modeling and simulation
+7. Stage VII Risk analysis and management
+
+## Prioritization and Response
+
+rate the risk
+
+1. probability x damage potential
+2. Disaster Repoducibility Exploitability Affected Users and Discoverability (DREAD)
+   1. Damage Potential - how severe is the damage likely to be if the threat is realised
+   2. Reproducibility - how complicated is it for atatcker to reproduce the exploit
+   3. Exploitability - how hard is it to perform the attack
+   4. Affected Users - how many user are likely to be affected by the attack
+   5. Discoverability - how hard is it for an attacker to discover weakness
+
+collusion - when several people work together to perpetrate a crime
+
+## Risk Terminology and Concept
+
+1. Asset - anything used in a business process or task such as person place or thing
+2. Asset valuation - value assigned to an asset
+3. Threat - any potential occurrence that may cause an undesirable or unwanted outcome for an organisation or  far a specific asset
+4. Threat agent/actors - are usually people  or programs or hardware that exploit vulnerability to cause harm to targets
+5. Threat events - are accidential occurrences or intentional exploitations of vulnerabilities
+6. Threat vector - path or mean by which an attack or attacker can gain access to target in order to cause harm
+7. Vulnerability - weakness in an asset or the weakness of a safeguard
+8. Exposure - is being susceptible to asset loss because of a threat
+9. Risk - is the possibility or likelihood that a threat will exploit a vulnerability to cause harm to an asset -- risk = threat * vulnerability
+10. Safeguard - protection mechanism that removes or reduce vulnerability
+11. Attack - intentional attempted exploitation of a vulnerability by threat agent to cause damage
+12. Breach - is the occurrence of a security mechanism being bypassed by threat agent. A breach is a successful attack
+
+Asset valuation - if asset has no value, there is no need to provide protection for it. A primary goal of risk analysis is to ensure that only cost-effective safeguards are deployed
+
+## Risk Assessement Methodologies
+
+1. Quantitative risk analysis - assign real dollar figures to the loss of an asset and is based on mathematical calculations
+2. Qualitative risk analysis - assigns subjective and intangible values to the loass of an asset
+
+The six major elements of quantitative risk analysis
+
+1. Assign asset value (AV)
+2. Calculate exposure factor (EF)
+3. Calculate single loss expectancy (SLE)
+4. Assess the annualised rate of occurrence (ARO)
+5. Derive the annualised loss expectancy (ALE)
+6. Perform cost/benefit analysis of countermeasures
+
+SLE = AV * EF
+ALE = SLE * ARO
+ALE = AV * EF * ARO
+
+## Risk Responses
+
+1. Mitigation or reduction - implementation of safeguards, security controls to reduce or eliminate vulnerabilities or block threats
+2. Assignment or transfer - is the placement of the responsibility of loss due to a risk onto another entity such as purchasing insurance and outsourcing are common form of assigning or transferring risk
+3. Deterrence - process of implementing deterrents th would-be violators. the goal is to convince a threat agent not to attack. - seucrity camera, security guard, guard dog
+4. Avoidance - process of selecting alternate options to have less associated risk - fly instead of drive
+5. Acceptance - is the result after a cost/benefit analysis show countermeasure costs would outweigh the possible cost of loss due to a risk. In most case, accepting risk requires a clearly written statement that indicates why a safeguard was not implemented, who is responsible for the decision, who will be responsible for the loss if the risk is realised, usually signed by senior management
+6. Reject or ignore - an unacceptable possible response to risk. denying that risk exists and hoping that it will never be realised are not valid prudent duecare/due diligence responses to risk
+
+Total risk = threats * vulnerabilities * asset value
+
+value of safeguard = (ALE before safegaurd) - (ALE after safeguard) - cost of safeguard
+
+Risk appetite - is the total amount of risk that an organisation is willing to shoulder in aggregate across all assets
+
+## Categories of security controls
+
+1. administrative - management control, managerial control, procedural control
+2. logical/technical - encryptions, firewall, etc
+3. physical - real-world - guard, fences etc
+
+## Type of controls
+
+1. preventive - thwart or stop unwant or unauthorised activity from occurring
+2. deterrent - discourage security policy violation
+3. detective - deployed to discover or detect unwant or unauthorised activity
+4. compensating - deployed to provide various options to other existing controls to aid in enforcement and support of security policies - if preventive control fails to stop deletion of a file, a backup can be a compensation conrol - if fire prevention fail, a compensation control is to have disaster recovery plan
+5. corrective - modified environment to return systems to normal after an unwanted or unauthorised activity has occurred - terminating malicious activity or rebooting a system
+6. recovery - an extension of corrective congtrol but have more advnaced or complex abilities.
+7. directive - is deployed to direct, confine or control the actions of subjects to force or encourage compliance with security policies (page 76pdf)
+
