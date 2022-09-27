@@ -110,7 +110,7 @@ PHI - Protected Health Information - Individually identifiable health records go
 1. Annualised Loss Expectancy
 2. Single Loss Expectancy
 
-## Threat Modeling - is the security process where potential threats are identified, categorised and analysed.
+## Threat Modeling - is the security process where potential threats are identified, categorised and analysed
 
 1. proactive - perform proactive during design and development
 2. reactive - perform once a product has been deployed - also called threat hunting
@@ -179,9 +179,9 @@ The six major elements of quantitative risk analysis
 5. Derive the annualised loss expectancy (ALE)
 6. Perform cost/benefit analysis of countermeasures
 
-SLE = AV * EF
-ALE = SLE * ARO
-ALE = AV * EF * ARO
+SLE = AV x EF
+ALE = SLE x ARO
+ALE = AV x EF x ARO
 
 ## Risk Responses
 
@@ -192,7 +192,7 @@ ALE = AV * EF * ARO
 5. Acceptance - is the result after a cost/benefit analysis show countermeasure costs would outweigh the possible cost of loss due to a risk. In most case, accepting risk requires a clearly written statement that indicates why a safeguard was not implemented, who is responsible for the decision, who will be responsible for the loss if the risk is realised, usually signed by senior management
 6. Reject or ignore - an unacceptable possible response to risk. denying that risk exists and hoping that it will never be realised are not valid prudent duecare/due diligence responses to risk
 
-Total risk = threats * vulnerabilities * asset value
+Total risk = threats x vulnerabilities x asset value
 
 value of safeguard = (ALE before safegaurd) - (ALE after safeguard) - cost of safeguard
 
@@ -212,5 +212,52 @@ Risk appetite - is the total amount of risk that an organisation is willing to s
 4. compensating - deployed to provide various options to other existing controls to aid in enforcement and support of security policies - if preventive control fails to stop deletion of a file, a backup can be a compensation conrol - if fire prevention fail, a compensation control is to have disaster recovery plan
 5. corrective - modified environment to return systems to normal after an unwanted or unauthorised activity has occurred - terminating malicious activity or rebooting a system
 6. recovery - an extension of corrective congtrol but have more advnaced or complex abilities.
-7. directive - is deployed to direct, confine or control the actions of subjects to force or encourage compliance with security policies (page 76pdf)
+7. directive - is deployed to direct, confine or control the actions of subjects to force or encourage compliance with security policies
 
+## Risk Reporting and Documentation
+
+1. Risk reporting - key task to perform at the conclusion of a risk analysis.
+2. Risk register or risk log is a document that inventories all the identified risks to an organisation or system or within an individual project. it should include the following:
+   1. Identifying risks
+   2. evaluating the severity of and prioritizing those risks
+   3. prescribe responses to reduce or eleminate the risks
+   4. tracking the progress of risk mitigation
+3. Risk Maturity Model (RMM)
+   1. Ad hoc - a chaotic starting point from which all organisation initiate risk management
+   2. Preliminary - loose attempts are made to follow risk management process, but each department may perform risk assessment uniquely
+   3. Defined - a common or standardised risk framework is adopted organisation-wide
+   4. Integrated - risk management operations are integrated into business process, metrics are used to gather effectiveness data and risk is considered an element in business strategy decisions
+   5. Optimised - risk management focuses on achieving objectives rather than just reacting to external threats; increased strategic planning is geared toward business success rather than just avoiding incidents; and lessons learned are reintegrated into the risk management process
+4. EOL - End of Life - is the point at which a manufacture no longer produces a product. service and support may continue for a period of time after EOL
+5. EOS - End of Support or EOSL - End of Service Life - is when systems are no longer receiving update and support from the vendor
+
+## Risk Frameworks
+
+1. risk framwork is a guideline for how risk is to be assessed
+2. NIST established the Risk Management Framework (RMF) - mandatory for federal agencies - 2010 - SP 800-37 Rev.2 consist of 6 cyclical phases
+   1. prepare to execute the RMS
+   2. categorise the system and information process
+   3. select initial set of control for system to reduce risk to acceptable level
+   4. implement the control and describe how the controls are employed within the system
+   5. assess the control to determine if the control are implemented correctly
+   6. authorise the system based on determination that risk is acceptable
+   7. monitor the system and the associated controls on an ongoing basis
+3. ISO/IEC 31000 - risk management - guidelines 
+4. ISO/IEC 27005 - information technology 0 security techniques - information security risk management
+5. Committee of Sponsoring Organisations (COSO) - of the Treadway Commission's Enterprise Risk Management - Integrated Framework
+6. ISACA's Risk IT Framework
+7. Operationally Critical Threat, Asset, and Vulnerability Evaluation (OCTAVE)
+8. Threat Agent Risk Assessment (TARA)
+
+## Social Engineering
+
+1. whaling - a form of spear phishing that targets specific high-value individuals such as CEO or other C-level
+2. smishing - short message service phishing - social engineering attack that occurs over SMS
+3. vishing - voice based phishing or SpIT (spam over internet telephony) - is phishing done over any telephony or voice communication system
+4. shoulder surfing - is often a physical world or in-person form of social engineering
+5. invoice scams - social engineering attacks that often attempt to steal funds from an organisation through the presentation of a false invoice
+6. Hoax - social engineering designed to convince targets to perform an action that will cause problems or reduce their IT security
+7. Tailgating and Piggybacking - unauthoised entity gain access to facility under the authorisation of a valid worker but without their knowledge
+8. Typo Squatting - a practice employed to capture and redirect traffic when a user mistype the domain name of intended resource.
+9. URL hijecking - practice of displaying a link or advertisememnt that looks like that of a well-known product
+10. Clickingjacking
